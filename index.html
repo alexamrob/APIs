@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Practica APIs</title>
+</head>
+
+<body>
+    <div id="principal" class="contenido">
+        <h1 class="titulo">Seleccionar archivo</h1>
+        <input type="file" class="video" id="file" accept="video/*">
+        <output id="video-output"></output>
+
+        <div>
+            <button onclick="document.getElementById('video').play();" id="rep" class="button" style="visibility: hidden">Reproducir</button>
+            <button onclick="document.getElementById('video').pause();" id="pausa" class="button" style="visibility: hidden">Pausa</button>
+            <button onclick="document.getElementById('video').volume += 0.1;" id="subir" class="button" style="visibility: hidden">Subir Volumen</button>
+            <button onclick="document.getElementById('video').volume -= 0.1;" id="bajar" class="button" style="visibility: hidden">Bajar Volumen</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
